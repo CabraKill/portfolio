@@ -6,7 +6,9 @@ import 'package:url_launcher/url_launcher.dart';
 
 class InfoPage extends StatelessWidget {
   const InfoPage({Key key}) : super(key: key);
+
   static const Color color = Colors.black;
+  static const String title = "Quem eu sou?";
 
   @override
   Widget build(BuildContext context) {
@@ -52,6 +54,7 @@ class InfoPage extends StatelessWidget {
                           decoration: TextDecoration.underline),
                     ),
                   ),
+                  SizedBox(height: 10,),
                   RichText(
                     text: TextSpan(children: [
                       TextSpan(

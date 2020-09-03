@@ -6,6 +6,7 @@ import 'package:portfolio/pages/subpages/attendanceCabuto/attendance_Page.dart';
 
 class _Rx {
   final RxInt currentPage = 0.obs;
+  final RxString currentPageTitle = AttendancePage.title.obs;
   final Rx<Color> backgroundColor = AttendancePage.color.obs;
 }
 
@@ -25,12 +26,15 @@ class HomeController extends GetxController {
     switch (rx.currentPage.value) {
       case 0:
         backgroundColor = AttendancePage.color;
+        rx.currentPageTitle.value = AttendancePage.title;
         break;
       case 1:
         backgroundColor = CactosolPage.color;
+        rx.currentPageTitle.value = CactosolPage.title;
         break;
       case 2:
         backgroundColor = InfoPage.color;
+        rx.currentPageTitle.value = InfoPage.title;
         break;
     }
   }
@@ -47,6 +51,7 @@ class HomeController extends GetxController {
   }
 
   int get currentPage => rx.currentPage.value;
+  String get currentPageTitle => rx.currentPageTitle.value;
   Color get backgroundColor => rx.backgroundColor.value;
   set backgroundColor(Color c) => rx.backgroundColor.value = c;
 }
