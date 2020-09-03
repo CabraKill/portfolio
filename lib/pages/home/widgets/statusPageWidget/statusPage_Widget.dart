@@ -31,6 +31,6 @@ class StatusPageWidget extends StatelessWidget {
 }
 
 double verticalAlignStatusPage(int page) {
-  final lastPage = 1.0;
+  final lastPage = 2.0;
   return (2 / lastPage) * page - 1;
 }

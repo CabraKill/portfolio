@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:portfolio/controller/home_Controller.dart';
 import 'package:portfolio/pages/home/widgets/statusPageWidget/statusPage_Widget.dart';
 import 'package:portfolio/pages/subpages/Cactosol/cactosol_Page.dart';
+import 'package:portfolio/pages/subpages/Info/info_Page.dart';
 import 'package:portfolio/pages/subpages/attendanceCabuto/attendance_Page.dart';
 import 'package:portfolio/theme/animation_Duration.dart';
 
@@ -17,7 +18,7 @@ class HomeScreen extends StatelessWidget {
               duration: AnimationDuration.transitionDuration,
               color: HomeController.to.backgroundColor,
               child: PageView(
-                children: [AttendancePage(), CactosolPage()],
+                children: [AttendancePage(), CactosolPage(), InfoPage()],
                 scrollDirection: Axis.vertical,
                 onPageChanged: HomeController.to.updateCurrentPage,
                 controller: HomeController.to.pageController,

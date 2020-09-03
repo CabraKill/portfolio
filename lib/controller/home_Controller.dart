@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:portfolio/pages/subpages/Cactosol/cactosol_Page.dart';
+import 'package:portfolio/pages/subpages/Info/info_Page.dart';
 import 'package:portfolio/pages/subpages/attendanceCabuto/attendance_Page.dart';
 
 class _Rx {
@@ -27,6 +28,9 @@ class HomeController extends GetxController {
         break;
       case 1:
         backgroundColor = CactosolPage.color;
+        break;
+      case 2:
+        backgroundColor = InfoPage.color;
         break;
     }
   }
