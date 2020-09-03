@@ -1,3 +1,4 @@
+import 'package:clipboard/clipboard.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -35,17 +36,37 @@ class InfoPage extends StatelessWidget {
             ),
             Align(
               alignment: Alignment.bottomLeft,
-              child: RichText(
-                text: TextSpan(children: [
-                  TextSpan(text: "gitHub: "),
-                  TextSpan(
-                    text: 'https://github.com/CabraKill',
-                    style: new TextStyle(color: Colors.blue),
-                    recognizer: new TapGestureRecognizer()
-                      ..onTap =
-                          () => _launchURL('https://github.com/CabraKill'),
-                  )
-                ]),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  InkWell(
+                    onTap: () =>
+                        FlutterClipboard.copy('raphaeldesouza@outlook.com')
+                            .then((value) => Get.snackbar(
+                                "Hamsters rodando...", "Email copiado",
+                                backgroundColor: Colors.white60)),
+                    child: Text(
+                      "raphaeldesouza@outlook.com",
+                      style: _textStyle.apply(
+                          decoration: TextDecoration.underline),
+                    ),
+                  ),
+                  RichText(
+                    text: TextSpan(children: [
+                      TextSpan(
+                          text: "gitHub: ",
+                          style: TextStyle(color: Colors.white)),
+                      TextSpan(
+                        text: 'https://github.com/CabraKill',
+                        style: new TextStyle(color: Colors.blue),
+                        recognizer: new TapGestureRecognizer()
+                          ..onTap =
+                              () => _launchURL('https://github.com/CabraKill'),
+                      )
+                    ]),
+                  ),
+                ],
               ),
             )
           ],
