@@ -13,7 +13,7 @@ class StatusPageWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
       ),
       width: 20,
-      height: 50,
+      height: 60,
       padding: EdgeInsets.symmetric(vertical: 5),
       child: AnimatedAlign(
         alignment: Alignment(
@@ -21,7 +21,7 @@ class StatusPageWidget extends StatelessWidget {
         duration: AnimationDuration.transitionDuration2,
         child: Container(
           width: 10,
-          height: 20,
+          height: 10,
           decoration:
               BoxDecoration(shape: BoxShape.circle, color: Colors.white54),
         ),
@@ -31,6 +31,6 @@ class StatusPageWidget extends StatelessWidget {
 }
 
 double verticalAlignStatusPage(int page) {
-  final lastPage = 2.0;
-  return (2 / lastPage) * page - 1;
+  const lastPage = 2.0;
+  return (2 / lastPage) * page - 1.0;
 }

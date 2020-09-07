@@ -21,6 +21,9 @@ Widget _legenda(String symbol, String text, Color color) => Row(
           backgroundColor: color,
           child: Text(symbol),
         ),
+        SizedBox(
+          width: 5,
+        ),
         Text(text)
       ],
     );
