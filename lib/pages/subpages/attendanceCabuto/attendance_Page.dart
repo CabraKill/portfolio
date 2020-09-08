@@ -7,15 +7,10 @@ class AttendancePage extends StatelessWidget {
   const AttendancePage({Key key}) : super(key: key);
 
   static Color color = Colors.blue[100];
-  static const String title = "Ponto eletrônico Cabuto";
+  static const String title = "Ponto eletrônico Cabuto\n(Tela interativa)";
 
   @override
   Widget build(BuildContext context) {
-    return ProjectPage(children: [
-      AttendancePage1(
-        width: 400,
-      ),
-      AttendancePage2()
-    ]);
+    return ProjectPage(children: [AttendancePage1(), AttendancePage2()]);
   }
 }

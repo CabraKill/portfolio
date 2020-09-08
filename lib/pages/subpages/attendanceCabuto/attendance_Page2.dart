@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/global_Widgets/legend_Widget.dart';
 import 'package:portfolio/global_Widgets/myChip_Widget.dart';
+import 'package:portfolio/global_Widgets/palleteColors_Widget.dart';
 
 class AttendancePage2 extends StatelessWidget {
   const AttendancePage2({Key key}) : super(key: key);
@@ -21,24 +22,31 @@ class AttendancePage2 extends StatelessWidget {
               spacing: 10,
               runSpacing: 10,
               children: [
-                MyChip(
-                  leading: CircleAvatar(
-                    backgroundColor: Colors.blue.shade900,
-                    child: Text('?'),
-                  ),
+                MyChip.why(
                   text:
-                      "Tornou-se necessário automatizar o processo de listas de chegada e saída na equipe. Além de tedioso e lento, ainda era necessário repassar a lista assinada para o computador.",
+                      "O horário de chegada e saída na equipe de aerodesign era feito por lista impressa, além de ser tedioso e lento. Por fim ainda era necessário repassar a lista assinada para o computador.",
                 ),
-                Chip(
-                  avatar: CircleAvatar(
-                    backgroundColor: Colors.blue.shade900,
-                    child: Text('?'),
-                  ),
-                  label: Text('Lafayette'),
-                ),
-                Chip(
-                  label: Text("oi"),
-                ),
+                MyChip.when(text: "14/10/2019"),
+                MyChip.tecnology(text: "Flutter"),
+                MyChip.tecnology(text: "Flare"),
+                MyChip.meaning(
+                    text:
+                        "Esta tela teve o objetivo de incentivar visualmente e comodamente o cumprimento de ponto"),
+                MyChip.meaning(
+                    text:
+                        "Não só últil, mas também era era necessário que ela representasse o meio que seria utilizado, como por exemplo as cores da equipe e o que era de melhor feito."),
+                MyChip.meaning(
+                    text:
+                        "O processo de \"preenchimento\" de lista pôde ser agilizado pelas informações ja serem coletadas automaticamente com o resto do aplicativo."),
+                MyChip.info(
+                    text:
+                        "As telas, consecutivamente, representam fora de expediente, livre para entrar e por fim trabalhando-relatório final."),
+                PalleteColors(colors: [
+                  Color.fromRGBO(2, 61, 143, 1),
+                  Color.fromRGBO(3, 135, 235, 1),
+                  Color.fromRGBO(33, 150, 243, 1),
+                  Color.fromRGBO(255, 255, 255, 1),
+                ])
               ],
             ),
           )

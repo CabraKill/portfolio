@@ -7,8 +7,10 @@ class LegendWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Wrap(spacing: 10, runSpacing: 10, children: [
       _legenda("?", "Por que?", Colors.blue.shade800),
-      _legenda("T", "Quando?", Colors.purple.shade800),
-      _legenda("R", "O que representa?", Colors.red.shade800),
+      _legenda("Q", "Quando?", Colors.purple.shade800),
+      _legenda("R", "Resultados", Colors.red.shade800),
+      _legenda("T", "Tecnologias", Colors.cyan.shade800),
+      _legenda("I", "Info", Colors.grey.shade800),
     ]);
   }
 }

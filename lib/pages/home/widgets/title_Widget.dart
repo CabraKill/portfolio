@@ -19,7 +19,7 @@ class TitleWidget extends StatelessWidget {
               key: ValueKey(HomeController.to.currentPageTitle),
               child: Padding(
                   padding: EdgeInsets.all(20),
-                  child: Text(HomeController.to.currentPageTitle))),
+                  child: Text(HomeController.to.currentPageTitle,textAlign: TextAlign.center,))),
         ));
   }
 }

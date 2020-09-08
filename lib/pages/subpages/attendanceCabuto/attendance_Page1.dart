@@ -6,17 +6,14 @@ class _RxController {
   static const animations = {0: "out", 1: "get_inside", 2: "report"};
   final RxInt currentAnimation = 0.obs;
 
-  update() {
-    currentAnimation.value = currentAnimation.value >= animations.length - 1
-        ? 0
-        : currentAnimation.value + 1;
-    print(currentAnimation.value);
-  }
+  update() =>
+      currentAnimation.value = currentAnimation.value >= animations.length - 1
+          ? 0
+          : currentAnimation.value + 1;
 }
 
 class AttendancePage1 extends StatelessWidget {
-  final double width;
-  AttendancePage1({@required this.width, Key key}) : super(key: key);
+  AttendancePage1({Key key}) : super(key: key);
 
   final controller = _RxController();
 
