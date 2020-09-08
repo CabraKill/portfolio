@@ -4,7 +4,7 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "assets/AssetManifest.json": "ceaf67328093a20ffbbb9090b2c0718a",
-"assets/assets/buttoncabuto.flr": "92277a805313af01fbbd0fc1a565709b",
+"assets/assets/buttoncabuto.flr": "3b430484d29d8df18e22f167ebd232aa",
 "assets/assets/eu-circle.png": "390a381ee5a31cb6c355dd06034634fa",
 "assets/assets/eu.jpg": "328079b64025283bc8a36054e114fa7d",
 "assets/assets/frame.png": "6d58e0c968c1df9e77cbfaf6a2bfc5de",
