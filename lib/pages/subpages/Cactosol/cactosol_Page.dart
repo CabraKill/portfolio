@@ -28,18 +28,6 @@ class CactosolPage extends StatelessWidget {
       child: Stack(
         alignment: Alignment.center,
         children: [
-          Container(
-            color: Colors.transparent, //Colors.blue,
-            width: 295,
-            height: 500,
-          ),
-          Image.asset(
-            "assets/frame.png",
-            alignment: Alignment.center,
-            width: 249,
-            height: 612,
-            fit: BoxFit.fill,
-          ),
           Padding(
             padding: EdgeInsets.symmetric(vertical: 35),
             child: FutureBuilder(

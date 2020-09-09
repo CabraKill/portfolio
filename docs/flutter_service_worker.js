@@ -3,9 +3,8 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "d5861e8023747e7453de3d6c42d3fdd5",
+  "assets/AssetManifest.json": "741cdda2fd53fe03609c6a4b767f07af",
 "assets/assets/buttoncabuto.flr": "3b430484d29d8df18e22f167ebd232aa",
-"assets/assets/cactosol.gif": "a76b855bf34934feaff8a7e91848fd10",
 "assets/assets/cactosol.mp4": "6b5ae2776154f09f7e497d7988900a50",
 "assets/assets/eu-circle.png": "390a381ee5a31cb6c355dd06034634fa",
 "assets/assets/eu.jpg": "328079b64025283bc8a36054e114fa7d",
