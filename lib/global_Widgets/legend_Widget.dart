@@ -1,17 +1,23 @@
 import 'package:flutter/material.dart';
 
 class LegendWidget extends StatelessWidget {
-  const LegendWidget({Key key}) : super(key: key);
+  final int start;
+  final int end;
+  const LegendWidget({this.start = 0, this.end = 5, Key key}) : super(key: key);
+
+  const LegendWidget.sub({@required this.start, @required this.end});
 
   @override
   Widget build(BuildContext context) {
-    return Wrap(spacing: 10, runSpacing: 10, children: [
+    final children = <Widget>[
       _legenda("?", "Por que?", Colors.blue.shade800),
       _legenda("Q", "Quando?", Colors.purple.shade800),
       _legenda("R", "Resultados", Colors.red.shade800),
       _legenda("T", "Tecnologias", Colors.cyan.shade800),
       _legenda("I", "Info", Colors.grey.shade800),
-    ]);
+    ];
+    return Wrap(
+        spacing: 10, runSpacing: 10, children: children.sublist(start, end));
   }
 }
 

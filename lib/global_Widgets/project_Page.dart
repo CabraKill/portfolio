@@ -8,7 +8,7 @@ class ProjectPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        final width = constraints.maxWidth > 900 ? 400 : constraints.maxWidth;
+        final width = constraints.maxWidth > 500 ? 400 : constraints.maxWidth;
         return Center(
           child: ListView(
             shrinkWrap: true,

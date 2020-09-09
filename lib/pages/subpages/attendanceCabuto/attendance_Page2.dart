@@ -14,7 +14,7 @@ class AttendancePage2 extends StatelessWidget {
         children: [
           Align(
             alignment: Alignment.bottomCenter,
-            child: LegendWidget(),
+            child: LegendWidget.sub(start: 0, end: 3),
           ),
           Align(
             alignment: Alignment.center,
@@ -26,18 +26,6 @@ class AttendancePage2 extends StatelessWidget {
                   text:
                       "O horário de chegada e saída na equipe de aerodesign era feito por lista impressa, além de ser tedioso e lento. Por fim ainda era necessário repassar a lista assinada para o computador.",
                 ),
-                MyChip.when(text: "14/10/2019"),
-                MyChip.tecnology(text: "Flutter"),
-                MyChip.tecnology(text: "Flare"),
-                MyChip.meaning(
-                    text:
-                        "Esta tela teve o objetivo de incentivar visualmente e comodamente o cumprimento de ponto"),
-                MyChip.meaning(
-                    text:
-                        "Não só últil, mas também era era necessário que ela representasse o meio que seria utilizado, como por exemplo as cores da equipe e o que era de melhor feito."),
-                MyChip.meaning(
-                    text:
-                        "O processo de \"preenchimento\" de lista pôde ser agilizado pelas informações ja serem coletadas automaticamente com o resto do aplicativo."),
                 MyChip.info(
                     text:
                         "As telas, consecutivamente, representam fora de expediente, livre para entrar e por fim trabalhando-relatório final."),
