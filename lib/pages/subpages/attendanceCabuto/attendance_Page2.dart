@@ -14,7 +14,7 @@ class AttendancePage2 extends StatelessWidget {
         children: [
           Align(
             alignment: Alignment.bottomCenter,
-            child: LegendWidget.sub(start: 0, end: 3),
+            child: LegendWidget.byKeys(keys: ["I","?"]),
           ),
           Align(
             alignment: Alignment.center,
@@ -29,12 +29,14 @@ class AttendancePage2 extends StatelessWidget {
                   text:
                       "O horário de chegada e saída na equipe de aerodesign era feito por lista impressa, além de ser tedioso e lento. Por fim ainda era necessário repassar a lista assinada para o computador.",
                 ),
-                PalleteColors(colors: [
-                  Color.fromRGBO(2, 61, 143, 1),
-                  Color.fromRGBO(3, 135, 235, 1),
-                  Color.fromRGBO(33, 150, 243, 1),
-                  Color.fromRGBO(255, 255, 255, 1),
-                ])
+                MyChip(
+                  child: PalleteColors(colors: [
+                    Color.fromRGBO(2, 61, 143, 1),
+                    Color.fromRGBO(3, 135, 235, 1),
+                    Color.fromRGBO(33, 150, 243, 1),
+                    Color.fromRGBO(255, 255, 255, 1),
+                  ]),
+                )
               ],
             ),
           )

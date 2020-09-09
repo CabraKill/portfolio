@@ -1,57 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:video_player/video_player.dart';
-
-class CactosolController extends GetxController {
-  VideoPlayerController videoController;
-  Future<void> initializeVideoPlayerFuture;
-  RxDouble width = 265.0.obs;
-
-  @override
-  void onInit() {
-    videoController = VideoPlayerController.asset("assets/cactosol.mp4");
-    initializeVideoPlayerFuture = videoController.initialize();
-    super.onInit();
-  }
-
-  @override
-  Future<void> onClose() {
-    videoController.dispose();
-    return super.onClose();
-  }
-}
+import 'package:portfolio/global_Widgets/project_Page.dart';
+import 'package:portfolio/pages/subpages/Cactosol/cactosol_Page1.dart';
+import 'package:portfolio/pages/subpages/Cactosol/cactosol_Page2.dart';
+import 'package:portfolio/pages/subpages/Cactosol/cactosol_Page3.dart';
+import 'package:portfolio/pages/subpages/Cactosol/cactosol_Page4.dart';
 
 class CactosolPage extends StatelessWidget {
-  CactosolPage({Key key}) : super(key: key);
+  const CactosolPage({Key key}) : super(key: key);
 
-  static const Color color = Colors.green;
+  static final Color color = Colors.green[300];
   static const String title = "Cactosol";
 
-  //final controller = Get.put(CactosolController());
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Padding(
-        padding: EdgeInsets.symmetric(vertical: 35),
-        child: GetBuilder<CactosolController>(
-            init: CactosolController(),
-            builder: (controller) => FutureBuilder(
-                future: controller.initializeVideoPlayerFuture,
-                builder: (context, snap) {
-                  if (snap.connectionState != ConnectionState.done)
-                    return Center(child: CircularProgressIndicator());
-                  controller.videoController.play();
-                  controller.videoController.setLooping(true);
-                  controller.width.value =
-                      controller.videoController.value.size.width;
-                  print("played");
-                  return AspectRatio(
-                    aspectRatio: controller.videoController.value.aspectRatio,
-                    // Use the VideoPlayer widget to display the video.
-                    child: VideoPlayer(controller.videoController),
-                  );
-                })),
-      ),
-    );
+    return ProjectPage(children: [
+      CactosolPage1(),
+      CactosolPage2(),
+      CactosolPage3(),
+      CactosolPage4(),
+    ]);
   }
 }
