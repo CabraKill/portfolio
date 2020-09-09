@@ -18,6 +18,7 @@ class AttendancePage2 extends StatelessWidget {
           ),
           Align(
             alignment: Alignment.center,
+            
             child: Wrap(
               spacing: 10,
               runSpacing: 10,
