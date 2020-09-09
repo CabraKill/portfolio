@@ -25,46 +25,24 @@ class CactosolPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Stack(
-        alignment: Alignment.center,
-        children: [
-          Padding(
-            padding: EdgeInsets.symmetric(vertical: 35),
-            child: FutureBuilder(
-                future: controller.initializeVideoPlayerFuture,
-                builder: (context, snap) {
-                  if (snap.connectionState != ConnectionState.done)
-                    return Center(child: CircularProgressIndicator());
-                  controller.videoController.play();
-                  controller.videoController.setLooping(true);
-                  controller.width.value =
-                      controller.videoController.value.size.width;
-                  print("played");
-                  return AspectRatio(
-                    aspectRatio: controller.videoController.value.aspectRatio,
-                    // Use the VideoPlayer widget to display the video.
-                    child: VideoPlayer(controller.videoController),
-                  );
-                }),
-          ),
-          
-
-          // Obx(() => Container(
-          //       alignment: Alignment.center,
-          //       height: 615,
-          //       child: AspectRatio(
-          //         aspectRatio:
-          //             controller.videoController.value.aspectRatio ?? 1,
-          //         child: Image.asset(
-          //           "assets/frame.png",
-          //           alignment: Alignment.center,
-          //           width: controller.width.value, //295,
-          //           //height: double.infinity,
-          //           fit: BoxFit.fill,
-          //         ),
-          //       ),
-          //     ))
-        ],
+      child: Padding(
+        padding: EdgeInsets.symmetric(vertical: 35),
+        child: FutureBuilder(
+            future: controller.initializeVideoPlayerFuture,
+            builder: (context, snap) {
+              if (snap.connectionState != ConnectionState.done)
+                return Center(child: CircularProgressIndicator());
+              controller.videoController.play();
+              controller.videoController.setLooping(true);
+              controller.width.value =
+                  controller.videoController.value.size.width;
+              print("played");
+              return AspectRatio(
+                aspectRatio: controller.videoController.value.aspectRatio,
+                // Use the VideoPlayer widget to display the video.
+                child: VideoPlayer(controller.videoController),
+              );
+            }),
       ),
     );
   }
