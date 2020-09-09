@@ -10,11 +10,12 @@ class LegendWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final children = <Widget>[
-      _legenda("?", "Por que?", Colors.blue.shade800),
-      _legenda("Q", "Quando?", Colors.purple.shade800),
-      _legenda("R", "Resultados", Colors.red.shade800),
-      _legenda("T", "Tecnologias", Colors.cyan.shade800),
       _legenda("I", "Info", Colors.grey.shade800),
+      _legenda("?", "Por que?", Colors.blue.shade800),
+      _legenda(
+          "R", "Resultados", Colors.red.shade800), //TODO: add color pallete
+      _legenda("Q", "Quando?", Colors.purple.shade800),
+      _legenda("T", "Tecnologias", Colors.cyan.shade800),
     ];
     return Wrap(
         spacing: 10, runSpacing: 10, children: children.sublist(start, end));
