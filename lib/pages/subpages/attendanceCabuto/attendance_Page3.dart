@@ -23,7 +23,7 @@ class AttendancePage3 extends StatelessWidget {
               children: [
                 MyChip.meaning(
                     text:
-                        "Esta tela teve o objetivo de incentivar visualmente e comodamente o cumprimento de ponto"),
+                        "Esta tela teve o objetivo de incentivar visualmente e comodamente o cumprimento do ponto"),
                 MyChip.meaning(
                     text:
                         "Não só últil, mas também era era necessário que ela representasse o meio que seria utilizado, como por exemplo as cores da equipe e o que era de melhor feito."),
