@@ -13,7 +13,7 @@ class AttendancePage3 extends StatelessWidget {
         children: [
           Align(
             alignment: Alignment.bottomCenter,
-            child: LegendWidget.sub(start: 2, end: 5),
+            child: LegendWidget.sub(start: 3, end: 5),
           ),
           Align(
             alignment: Alignment.center,

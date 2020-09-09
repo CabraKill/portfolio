@@ -18,18 +18,17 @@ class AttendancePage2 extends StatelessWidget {
           ),
           Align(
             alignment: Alignment.center,
-            
             child: Wrap(
               spacing: 10,
               runSpacing: 10,
               children: [
+                MyChip.info(
+                    text:
+                        "As telas, consecutivamente, representam fora de expediente, livre para entrar e por fim trabalhando-relatório final."),
                 MyChip.why(
                   text:
                       "O horário de chegada e saída na equipe de aerodesign era feito por lista impressa, além de ser tedioso e lento. Por fim ainda era necessário repassar a lista assinada para o computador.",
                 ),
-                MyChip.info(
-                    text:
-                        "As telas, consecutivamente, representam fora de expediente, livre para entrar e por fim trabalhando-relatório final."),
                 PalleteColors(colors: [
                   Color.fromRGBO(2, 61, 143, 1),
                   Color.fromRGBO(3, 135, 235, 1),
