@@ -1,2 +1,2 @@
-rmdir docs /s /Y
+rmdir docs /s /q
 Xcopy build\web docs /I /Y /S
