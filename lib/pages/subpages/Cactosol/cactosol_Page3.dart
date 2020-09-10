@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/global_Widgets/imageLoading_Widget.dart';
 import 'package:portfolio/global_Widgets/legend_Widget.dart';
 import 'package:portfolio/global_Widgets/myChip_Widget.dart';
 
@@ -30,15 +31,14 @@ class CactosolPage3 extends StatelessWidget {
                     text:
                         "A sincronização de dados do Firebase permite não só o salvamento em nuvem, mas a visualização instatânea das modificações ou adições que alguém acabou de fazer."),
                 MyChip(
-                  child: Image.asset(
-                    "assets/cactosol/mapsNotification.gif",
+                  child: ImageLoading(
+                    asset: "assets/cactosol/mapsNotification.gif",
                   ),
                 ),
                 MyChip(
-                  child: Image.asset(
-                    "assets/cactosol/memoryNotification.gif",
-                  ),
-                ),
+                    child: ImageLoading(
+                  asset: "assets/cactosol/memoryNotification.gif",
+                )),
               ],
             ),
           )

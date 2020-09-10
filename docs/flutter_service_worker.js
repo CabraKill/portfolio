@@ -9,7 +9,7 @@ const RESOURCES = {
 "assets/assets/cactosol/cactosol.gif": "df85a0e47a142731c231c3e010e3fcc4",
 "assets/assets/cactosol/database.PNG": "9c73b01c177703e39027c77473b1689f",
 "assets/assets/cactosol/maps.gif": "ccb2604ad02cbc7cf4be2f49f465558a",
-"assets/assets/cactosol/mapsNotification.gif": "47fe35c6d1b9e77ef0ae526a1f8f64d2",
+"assets/assets/cactosol/mapsNotification.gif": "8ff0d0db1e4b13d77a7e64225d0b1bcd",
 "assets/assets/cactosol/memoryNotification.gif": "81aaf4a32b57e075144934b8ef4f18b3",
 "assets/assets/myself/eu.jpg": "60fa1b8c1dfab69f608a14f3ed0ab616",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
@@ -22,7 +22,7 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "index.html": "2def70cdfb9efbc99017bc85e0c5e804",
 "/": "2def70cdfb9efbc99017bc85e0c5e804",
-"main.dart.js": "a3cfe2a082d2d072d78ac79000f2a3d0",
+"main.dart.js": "54fbf067550e9279190adc93ac32e5e7",
 "manifest.json": "5a2c0526f1fe73e6f211bc7a9d15c210"
 };
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:portfolio/global_Widgets/imageLoading_Widget.dart';
 import 'package:video_player/video_player.dart';
 
 class CactosolController extends GetxController {
@@ -26,9 +27,9 @@ class CactosolPage1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-        child: Padding(
-      padding: EdgeInsets.all(35),
-      child: Image.asset("assets/cactosol/cactosol.gif"),
-    ));
+      child: Padding(
+          padding: EdgeInsets.all(35),
+          child: ImageLoading(asset: "assets/cactosol/cactosol.gif")),
+    );
   }
 }

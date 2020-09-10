@@ -6,4 +6,5 @@ import 'package:portfolio/route/routes.dart';
 void main() => runApp(GetMaterialApp(
       initialRoute: Routes.HOME,
       getPages: Nav.routes,
+      theme: ThemeData(accentColor: Colors.cyan),
     ));

@@ -7,7 +7,7 @@ class IntroPage extends StatelessWidget {
   const IntroPage({Key key}) : super(key: key);
 
   static Color color = Colors.grey[100];
-  static const String title = "Bem vindo.";
+  static const String title = "Bem Vindo";
 
   @override
   Widget build(BuildContext context) {
@@ -22,16 +22,21 @@ class IntroPage extends StatelessWidget {
           children: [
             Align(
               alignment: Alignment.center,
-              child: const TextTile.title1(
-                  text:
-                      "Pegue um café, alguns biscoitos e aproveite a viagem."),
-            ),
-            Align(
-              alignment: Alignment(0, 0.2),
-              child: Categories(children: [
-                const Text("Ponto eletrônico Cabuto"),
-                const Text("Cactosol")
-              ]),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const TextTile.title1(
+                      text:
+                          "Pegue um café, alguns biscoitos e aproveite a viagem."),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Categories(children: [
+                    const Text("Ponto eletrônico Cabuto"),
+                    const Text("Cactosol")
+                  ])
+                ],
+              ),
             ),
             Align(
               alignment: Alignment.bottomLeft,
@@ -45,9 +50,14 @@ class IntroPage extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  const TextTile.title2(
+                  Align(
+                    alignment: Alignment.center,
+                    child: const TextTile.title2(
                       text:
-                          "Esta página está em constante atualização. Aproveite."),
+                          "Esta página está em constante atualização. Aproveite.",
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
                 ],
               ),
             )
@@ -69,7 +79,7 @@ class TextTile extends StatelessWidget {
       {@required this.text, this.size: 30, this.textAlign: TextAlign.center});
 
   const TextTile.title2(
-      {@required this.text, this.size: 14, this.textAlign: TextAlign.left});
+      {@required this.text, this.size: 14, this.textAlign: TextAlign.justify});
 
   @override
   Widget build(BuildContext context) {

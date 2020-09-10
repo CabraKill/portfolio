@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/global_Widgets/imageLoading_Widget.dart';
 import 'package:portfolio/global_Widgets/legend_Widget.dart';
 import 'package:portfolio/global_Widgets/myChip_Widget.dart';
 
@@ -24,7 +25,9 @@ class CactosolPage4 extends StatelessWidget {
               runSpacing: 10,
               children: [
                 MyChip(
-                  child: Image.asset("assets/cactosol/maps.gif",),
+                  child: ImageLoading(
+                    asset: "assets/cactosol/maps.gif",
+                  ),
                 ),
                 MyChip.when(text: "09/05/2020")
               ],
