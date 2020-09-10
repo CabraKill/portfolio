@@ -8,7 +8,7 @@ import 'package:portfolio/pages/subpages/Cactosol/cactosol_Page4.dart';
 class CactosolPage extends StatelessWidget {
   const CactosolPage({Key key}) : super(key: key);
 
-  static final Color color = Colors.green[300];
+  static final Color color = Colors.green[200];
   static const String title = "Cactosol";
 
   @override

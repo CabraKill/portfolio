@@ -58446,7 +58446,7 @@ r($,"apF","a61",function(){return new L.J6("Safari",L.al9())})
 r($,"apw","acA",function(){return new L.Hy("Internet Explorer",L.al8())})
 r($,"apP","acL",function(){return new L.Kh("WKWebView",L.ala())})
 r($,"anC","abs",function(){return P.b6(["I",X.KR("I","Info",C.q0.gl6()),"?",X.KR("?","Por que?",C.b4.gl6()),"R",X.KR("R","Resultados",C.q2.gl6()),"Q",X.KR("Q","Quando?",C.q1.gl6()),"T",X.KR("T","Tecnologias",C.kc.gl6())],t.X,t.ib)})
-r($,"amZ","abe",function(){return C.y6.i(0,300)})
+r($,"amZ","abe",function(){return C.y6.i(0,200)})
 r($,"apn","acw",function(){var q=null
 return A.fJ(q,q,C.kc,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q)})
 r($,"amS","a5H",function(){return C.b4.i(0,100)})
