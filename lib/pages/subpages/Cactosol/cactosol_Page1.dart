@@ -23,31 +23,12 @@ class CactosolController extends GetxController {
 class CactosolPage1 extends StatelessWidget {
   CactosolPage1({Key key}) : super(key: key);
 
-  
-
-  //final controller = Get.put(CactosolController());
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Padding(
-        padding: EdgeInsets.all(35),
-        child: GetBuilder<CactosolController>(
-            init: CactosolController(),
-            builder: (controller) => FutureBuilder(
-                future: controller.initializeVideoPlayerFuture,
-                builder: (context, snap) {
-                  if (snap.connectionState != ConnectionState.done)
-                    return Center(child: CircularProgressIndicator());
-                  controller.videoController.play();
-                  controller.videoController.setLooping(true);
-                  print("played");
-                  return AspectRatio(
-                    aspectRatio: controller.videoController.value.aspectRatio,
-                    // Use the VideoPlayer widget to display the video.
-                    child: VideoPlayer(controller.videoController),
-                  );
-                })),
-      ),
-    );
+        child: Padding(
+      padding: EdgeInsets.all(35),
+      child: Image.asset("assets/cactosol/cactosol.gif"),
+    ));
   }
 }

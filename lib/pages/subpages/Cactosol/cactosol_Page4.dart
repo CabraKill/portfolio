@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/global_Widgets/legend_Widget.dart';
 import 'package:portfolio/global_Widgets/myChip_Widget.dart';
-import 'package:portfolio/global_Widgets/videoLoop_Widget.dart';
 
 class CactosolPage4 extends StatelessWidget {
   const CactosolPage4({Key key}) : super(key: key);
@@ -25,7 +24,7 @@ class CactosolPage4 extends StatelessWidget {
               runSpacing: 10,
               children: [
                 MyChip(
-                  child: Image.asset("assets/maps.gif",),
+                  child: Image.asset("assets/cactosol/maps.gif",),
                 ),
                 MyChip.when(text: "09/05/2020")
               ],

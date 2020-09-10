@@ -30,7 +30,7 @@ class AttendancePage1 extends StatelessWidget {
             height: 500,
           ),
           Image.asset(
-            "assets/frame.png",
+            "assets/attendance/frame.png",
             alignment: Alignment.center,
             width: 300,
             //height: double.infinity,
@@ -41,7 +41,7 @@ class AttendancePage1 extends StatelessWidget {
               child: SizedBox(
                   width: 300,
                   child: Obx(() => FlareActor(
-                        "assets/buttoncabuto.flr",
+                        "assets/attendance/buttoncabuto.flr",
                         animation: _RxController
                             .animations[controller.currentAnimation.value],
                       )))),

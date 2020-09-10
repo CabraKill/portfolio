@@ -31,7 +31,7 @@ class InfoPage extends StatelessWidget {
                     border: Border.all(width: 15, color: Colors.white),
                     borderRadius: BorderRadius.circular(10)),
                 child: Image.asset(
-                  "assets/eu.jpg",
+                  "assets/myself/eu.jpg",
                   width: 300,
                 ),
               ),
