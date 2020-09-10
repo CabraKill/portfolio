@@ -3,11 +3,12 @@ import 'package:get/get.dart';
 import 'package:portfolio/pages/subpages/Cactosol/cactosol_Page.dart';
 import 'package:portfolio/pages/subpages/Info/info_Page.dart';
 import 'package:portfolio/pages/subpages/attendanceCabuto/attendance_Page.dart';
+import 'package:portfolio/pages/subpages/intro/intro_Page.dart';
 
 class _Rx {
   final RxInt currentPage = 0.obs;
-  final RxString currentPageTitle = AttendancePage.title.obs;
-  final Rx<Color> backgroundColor = AttendancePage.color.obs;
+  final RxString currentPageTitle = IntroPage.title.obs;
+  final Rx<Color> backgroundColor = IntroPage.color.obs;
 }
 
 class HomeController extends GetxController {
@@ -25,14 +26,18 @@ class HomeController extends GetxController {
   void updateBackgroundColor() {
     switch (rx.currentPage.value) {
       case 0:
+        backgroundColor = IntroPage.color;
+        rx.currentPageTitle.value = IntroPage.title;
+        break;
+      case 1:
         backgroundColor = AttendancePage.color;
         rx.currentPageTitle.value = AttendancePage.title;
         break;
-      case 1:
+      case 2:
         backgroundColor = CactosolPage.color;
         rx.currentPageTitle.value = CactosolPage.title;
         break;
-      case 2:
+      case 3:
         backgroundColor = InfoPage.color;
         rx.currentPageTitle.value = InfoPage.title;
         break;

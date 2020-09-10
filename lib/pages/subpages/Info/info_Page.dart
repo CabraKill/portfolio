@@ -18,10 +18,14 @@ class InfoPage extends StatelessWidget {
         child: Stack(
           children: [
             Align(
-              alignment: Alignment.topLeft,
-              child: Text(
-                "Quem eu sou ?",
-                style: _textStyle,
+              alignment: Alignment(0, -0.8),
+              child: SizedBox(
+                width: 290,
+                child: Text(
+                  '"Olá, eu sou Raphael! Atualmente no 8º período de Engenharia Mecatrônica (Unit/Se) e Técnico em Automação Industrial (SENAI). Apaixonado por tecnologia que soluciona problemas (Ou só que é muito legal de ver)."',
+                  style: _textStyle,
+                  textAlign: TextAlign.justify,
+                ),
               ),
             ),
             Align(
@@ -47,14 +51,17 @@ class InfoPage extends StatelessWidget {
                         FlutterClipboard.copy('raphaeldesouza@outlook.com')
                             .then((value) => Get.snackbar(
                                 "Hamsters rodando...", "Email copiado",
-                                backgroundColor: Colors.white60)),
+                                backgroundColor: Colors.black.withAlpha(200),
+                                colorText: Colors.cyan)),
                     child: Text(
                       "raphaeldesouza@outlook.com",
                       style: _textStyle.apply(
                           decoration: TextDecoration.underline),
                     ),
                   ),
-                  SizedBox(height: 10,),
+                  SizedBox(
+                    height: 10,
+                  ),
                   RichText(
                     text: TextSpan(children: [
                       TextSpan(
@@ -70,6 +77,22 @@ class InfoPage extends StatelessWidget {
                     ]),
                   ),
                 ],
+              ),
+            ),
+            Align(
+              alignment: Alignment.bottomRight,
+              child: IconButton(
+                tooltip: "Informações e licensas.",
+                icon: Icon(
+                  Icons.info,
+                  color: Colors.cyan,
+                ),
+                onPressed: () => showAboutDialog(
+                  context: context,
+                  applicationIcon: Icon(Icons.info),
+                  applicationName: "Porfólio",
+                  applicationVersion: "1.0",
+                ),
               ),
             )
           ],

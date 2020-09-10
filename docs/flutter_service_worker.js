@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "04551664322942001823203f0864b7cd",
+  "assets/AssetManifest.json": "17a8c6154a0b848c402ecb7afd6f4ca5",
 "assets/assets/attendance/buttoncabuto.flr": "3b430484d29d8df18e22f167ebd232aa",
 "assets/assets/attendance/frame.png": "6d58e0c968c1df9e77cbfaf6a2bfc5de",
 "assets/assets/cactosol/cactosol.gif": "df85a0e47a142731c231c3e010e3fcc4",
@@ -11,8 +11,7 @@ const RESOURCES = {
 "assets/assets/cactosol/maps.gif": "ccb2604ad02cbc7cf4be2f49f465558a",
 "assets/assets/cactosol/mapsNotification.gif": "47fe35c6d1b9e77ef0ae526a1f8f64d2",
 "assets/assets/cactosol/memoryNotification.gif": "81aaf4a32b57e075144934b8ef4f18b3",
-"assets/assets/myself/eu-circle.png": "390a381ee5a31cb6c355dd06034634fa",
-"assets/assets/myself/eu.jpg": "328079b64025283bc8a36054e114fa7d",
+"assets/assets/myself/eu.jpg": "60fa1b8c1dfab69f608a14f3ed0ab616",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "a68d2a28c526b3b070aefca4bac93d25",
 "assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
@@ -23,7 +22,7 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "index.html": "2def70cdfb9efbc99017bc85e0c5e804",
 "/": "2def70cdfb9efbc99017bc85e0c5e804",
-"main.dart.js": "e1b3539ff46944c745d6a295654c0c0d",
+"main.dart.js": "a3cfe2a082d2d072d78ac79000f2a3d0",
 "manifest.json": "5a2c0526f1fe73e6f211bc7a9d15c210"
 };
 
