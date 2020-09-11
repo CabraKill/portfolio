@@ -13,7 +13,7 @@ class AttendancePage3 extends StatelessWidget {
         children: [
           Align(
             alignment: Alignment.bottomCenter,
-            child: LegendWidget.byKeys(keys: ["R","Q","T"]),
+            child: LegendWidget.byKeys(keys: ["R"]),
           ),
           Align(
             alignment: Alignment.center,
@@ -30,9 +30,9 @@ class AttendancePage3 extends StatelessWidget {
                 MyChip.meaning(
                     text:
                         "O processo de \"preenchimento\" de lista pôde ser agilizado pelas informações ja serem coletadas automaticamente com o resto do aplicativo."),
-                MyChip.when(text: "14/10/2019"),
                 MyChip.tecnology(text: "Flutter"),
                 MyChip.tecnology(text: "Flare"),
+                MyChip.when(text: "14/10/2019"),
               ],
             ),
           )

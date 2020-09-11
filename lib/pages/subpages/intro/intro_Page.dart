@@ -33,7 +33,8 @@ class IntroPage extends StatelessWidget {
                   ),
                   Categories(children: [
                     const Text("Ponto eletrônico Cabuto"),
-                    const Text("Cactosol")
+                    const Text("Cactosol"),
+                    const Text("Gerenciamento de clientes")
                   ])
                 ],
               ),

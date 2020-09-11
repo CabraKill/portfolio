@@ -31,6 +31,7 @@ class CactosolPage2 extends StatelessWidget {
                   text:
                       "Já sentiu vontade de salvar um momento ou dia por quê ele merecia ser vivido e revivido não apenas no presente? Nada existinte parecia fazer juízo para solucionar essa vontade que aparece em várias formas.",
                 ),
+                MyChip.tecnology(text: "Flutter"),
                 MyChip.tecnology(text: "Flare"),
                 MyChip.tecnology(text: "Get"),
                 MyChip.tecnology(text: "GetStorage"),

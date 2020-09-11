@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:portfolio/pages/subpages/Cactosol/cactosol_Page.dart';
 import 'package:portfolio/pages/subpages/Info/info_Page.dart';
 import 'package:portfolio/pages/subpages/attendanceCabuto/attendance_Page.dart';
+import 'package:portfolio/pages/subpages/commercial1/commercial1_Page.dart';
 import 'package:portfolio/pages/subpages/intro/intro_Page.dart';
 
 class _Rx {
@@ -38,6 +39,10 @@ class HomeController extends GetxController {
         rx.currentPageTitle.value = CactosolPage.title;
         break;
       case 3:
+        backgroundColor = Commercial1Page.color;
+        rx.currentPageTitle.value = Commercial1Page.title;
+        break;
+      case 4:
         backgroundColor = InfoPage.color;
         rx.currentPageTitle.value = InfoPage.title;
         break;

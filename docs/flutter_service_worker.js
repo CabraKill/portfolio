@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "17a8c6154a0b848c402ecb7afd6f4ca5",
+  "assets/AssetManifest.json": "b512e018c40fa7c882788521db4d3cfc",
 "assets/assets/attendance/buttoncabuto.flr": "3b430484d29d8df18e22f167ebd232aa",
 "assets/assets/attendance/frame.png": "6d58e0c968c1df9e77cbfaf6a2bfc5de",
 "assets/assets/cactosol/cactosol.gif": "df85a0e47a142731c231c3e010e3fcc4",
@@ -11,6 +11,11 @@ const RESOURCES = {
 "assets/assets/cactosol/maps.gif": "ccb2604ad02cbc7cf4be2f49f465558a",
 "assets/assets/cactosol/mapsNotification.gif": "8ff0d0db1e4b13d77a7e64225d0b1bcd",
 "assets/assets/cactosol/memoryNotification.gif": "81aaf4a32b57e075144934b8ef4f18b3",
+"assets/assets/commercial1/blocked.jpg": "4a1f752ce622cd6073bd1ddcf861f3cd",
+"assets/assets/commercial1/clients.jpg": "757b4e70ff1f4e3e2add9598c12be1dd",
+"assets/assets/commercial1/confirm.jpg": "92172b7fb087d6775c8dce299b9da25e",
+"assets/assets/commercial1/profile.png": "b69efa6806d89f312fc8de8e9317833e",
+"assets/assets/commercial1/server.png": "66e4bd139fd18e67a3c2b88c91ed74c3",
 "assets/assets/myself/eu.jpg": "60fa1b8c1dfab69f608a14f3ed0ab616",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "a68d2a28c526b3b070aefca4bac93d25",
@@ -22,7 +27,7 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "index.html": "2def70cdfb9efbc99017bc85e0c5e804",
 "/": "2def70cdfb9efbc99017bc85e0c5e804",
-"main.dart.js": "54fbf067550e9279190adc93ac32e5e7",
+"main.dart.js": "f8d69d0486b82979a46b6bb8fa573d9a",
 "manifest.json": "5a2c0526f1fe73e6f211bc7a9d15c210"
 };
 

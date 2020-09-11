@@ -6,6 +6,7 @@ import 'package:portfolio/pages/home/widgets/title_Widget.dart';
 import 'package:portfolio/pages/subpages/Cactosol/cactosol_Page.dart';
 import 'package:portfolio/pages/subpages/Info/info_Page.dart';
 import 'package:portfolio/pages/subpages/attendanceCabuto/attendance_Page.dart';
+import 'package:portfolio/pages/subpages/commercial1/commercial1_Page.dart';
 import 'package:portfolio/pages/subpages/intro/intro_Page.dart';
 import 'package:portfolio/theme/animation_Duration.dart';
 
@@ -24,6 +25,7 @@ class HomeScreen extends StatelessWidget {
                   IntroPage(),
                   AttendancePage(),
                   CactosolPage(),
+                  Commercial1Page(),
                   InfoPage()
                 ],
                 scrollDirection: Axis.vertical,
