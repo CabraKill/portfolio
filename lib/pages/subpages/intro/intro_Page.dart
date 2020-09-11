@@ -21,6 +21,13 @@ class IntroPage extends StatelessWidget {
         child: Stack(
           children: [
             Align(
+              alignment: Alignment.topRight,
+              child: TextTile.title2(
+                text: "Flutter",
+                textAlign: TextAlign.right,
+              ),
+            ),
+            Align(
               alignment: Alignment.center,
               child: Column(
                 mainAxisSize: MainAxisSize.min,

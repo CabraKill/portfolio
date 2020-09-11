@@ -30,7 +30,7 @@ class Commercial1Page4 extends StatelessWidget {
                 ),
                 MyChip.meaning(
                     text:
-                        "Outra preocupação importante ao app era poder conferir os dados dos clientes, como nome e telefone, além da função de realizar chamadas direto do app para contatar os clientes."),
+                        "Outra preocupação importante ao app era poder conferir os dados dos clientes, como nome e telefone, além da função de realizar chamadas direto do app para contatá-los."),
                 MyChip.tecnology(text: "Flutter"),
                 MyChip.tecnology(text: "BLoc"),
                 MyChip.tecnology(text: "Shared Preferences"),

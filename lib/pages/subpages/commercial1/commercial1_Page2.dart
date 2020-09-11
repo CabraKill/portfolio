@@ -26,7 +26,7 @@ class Commercial1Page2 extends StatelessWidget {
               children: [
                 const MyChip.info(
                     text:
-                        "Este app foi requisito para uso interno dos funcionários de uma empresa de informática que queria facilitar a gerência dos seus clientes. Era necessário que o app fosse implementado sem haver mudanças no funcionamento do sistema, com a facildiade de um \"plug and play\"."),
+                        "Este app foi requisitado para uso interno dos funcionários de uma empresa de informática que queria facilitar a gerência dos seus clientes. Era necessário que o app fosse implementado sem haver mudanças no funcionamento já existente do sistema, com a facildiade de um \"plug and play\"."),
                 const MyChip.why(
                   text:
                       "Toda operação de verificação, liberação e bloqueagem de clientes, por mais que fosse salva em um servidor FTP online, era feita apenas por um computador com o sistema implementado.",

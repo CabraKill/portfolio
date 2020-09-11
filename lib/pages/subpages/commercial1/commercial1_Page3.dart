@@ -38,7 +38,7 @@ class Commercial1Page3 extends StatelessWidget {
                 ),
                 MyChip.meaning(
                     text:
-                        "A confirmações das operações também necessária para assegurar a mudanças dos dados críticos a operaão dos clientes."),
+                        "A confirmações das operações também é necessária para assegurar a mudanças dos dados críticos dea operação dos clientes."),
               ],
             ),
           )
