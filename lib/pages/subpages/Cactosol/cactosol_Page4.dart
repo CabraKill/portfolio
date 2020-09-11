@@ -29,7 +29,7 @@ class CactosolPage4 extends StatelessWidget {
                     asset: "assets/cactosol/maps.gif",
                   ),
                 ),
-                MyChip.when(text: "09/05/2020")
+                MyChip.when(text: "23/08/2020")
               ],
             ),
           )
