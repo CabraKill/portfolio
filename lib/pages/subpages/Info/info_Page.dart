@@ -12,9 +12,13 @@ class InfoPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Padding(
-        padding: EdgeInsets.all(10),
+    return Padding(
+      padding: EdgeInsets.all(10),
+      child: Container(
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20),
+            border: Border.all(color: Colors.cyan, width: 2)),
+        padding: const EdgeInsets.all(6),
         child: Stack(
           children: [
             Align(
