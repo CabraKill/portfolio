@@ -33,7 +33,7 @@ class CactosolPage2 extends StatelessWidget {
                 ),
                 MyChip.tecnology(text: "Flutter"),
                 MyChip.tecnology(text: "Flare"),
-                MyChip.tecnology(text: "Get"),
+                MyChip.tecnology(text: "Mobx migrado para Get"),
                 MyChip.tecnology(text: "GetStorage"),
                 MyChip.tecnology(text: "Firebase"),
                 MyChip.tecnology(text: "Google Maps"),
